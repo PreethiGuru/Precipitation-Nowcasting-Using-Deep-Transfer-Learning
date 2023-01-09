@@ -1,3 +1,5 @@
+#PRECIPITATION NOWCASTING USING DEEP TRANSFER LEARNING
+
 NEXRAD Level-II (Base) Data
 Level-II (L2) data are grouped into three meteorological base quantities: reflectivity, mean radial velocity, and spectrum width. Additional categories include dual-polarization base data of differential reflectivity, correlation coefficient, and differential phase. Data is stored in files that typically contain four, five, six, or ten minutes of base data depending on the volume coverage pattern. A data file consists of a 24-byte volume scan header record followed by numerous 2,432-byte base data and message records.
 
