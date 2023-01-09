@@ -12,14 +12,18 @@ https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad
 
 
 ----> A single file contains the following: (can be read using commands of PyArt --- pyart.io.read(filename).info())
+
 altitude:
 	data: <ndarray of type: float64 and shape: (1,)>
 	long_name: Altitude
 	standard_name: Altitude
 	units: meters
 	positive: up
+
 altitude_agl: None
+
 antenna_transition: None
+
 azimuth:
 	data: <ndarray of type: float64 and shape: (8280,)>
 	units: degrees
@@ -27,6 +31,7 @@ azimuth:
 	long_name: azimuth_angle_from_true_north
 	axis: radial_azimuth_coordinate
 	comment: Azimuth of antenna relative to true north
+
 elevation:
 	data: <ndarray of type: float32 and shape: (8280,)>
 	units: degrees
@@ -34,6 +39,7 @@ elevation:
 	long_name: elevation_angle_from_horizontal_plane
 	axis: radial_elevation_coordinate
 	comment: Elevation of antenna relative to the horizontal plane
+
 fields:
 	cross_correlation_ratio:
 		data: <ndarray of type: float32 and shape: (8280, 1832)>
@@ -98,11 +104,13 @@ fields:
 		valid_min: 0.0
 		coordinates: elevation azimuth range
 		_FillValue: -9999.0
+
 fixed_angle:
 	data: <ndarray of type: float32 and shape: (15,)>
 	long_name: Target angle for sweep
 	units: degrees
 	standard_name: target_fixed_angle
+
 instrument_parameters:
 	unambiguous_range:
 		data: <ndarray of type: float32 and shape: (8280,)>
@@ -116,20 +124,27 @@ instrument_parameters:
 		comments: Unambiguous velocity
 		meta_group: instrument_parameters
 		long_name: Nyquist velocity
+
 latitude:
 	data: <ndarray of type: float64 and shape: (1,)>
 	long_name: Latitude
 	standard_name: Latitude
 	units: degrees_north
+
 longitude:
 	data: <ndarray of type: float64 and shape: (1,)>
 	long_name: Longitude
 	standard_name: Longitude
 	units: degrees_east
+
 nsweeps: 15
+
 ngates: 1832
+
 nrays: 8280
+
 radar_calibration: None
+
 range:
 	data: <ndarray of type: float32 and shape: (1832,)>
 	units: meters
@@ -140,28 +155,36 @@ range:
 	comment: Coordinate variable for range. Range to center of each bin.
 	meters_to_center_of_first_gate: 2125.0
 	meters_between_gates: 250.0
+
 scan_rate: None
+
 scan_type: ppi
+
 sweep_end_ray_index:
 	data: <ndarray of type: int32 and shape: (15,)>
 	long_name: Index of last ray in sweep, 0-based
 	units: count
+
 sweep_mode:
 	data: <ndarray of type: |S20 and shape: (15,)>
 	units: unitless
 	standard_name: sweep_mode
 	long_name: Sweep mode
 	comment: Options are: "sector", "coplane", "rhi", "vertical_pointing", "idle", "azimuth_surveillance", "elevation_surveillance", "sunscan", "pointing", "manual_ppi", "manual_rhi"
+
 sweep_number:
 	data: <ndarray of type: int32 and shape: (15,)>
 	units: count
 	standard_name: sweep_number
 	long_name: Sweep number
+
 sweep_start_ray_index:
 	data: <ndarray of type: int32 and shape: (15,)>
 	long_name: Index of first ray in sweep, 0-based
 	units: count
+
 target_scan_rate: None
+
 time:
 	data: <ndarray of type: float64 and shape: (8280,)>
 	units: seconds since 2021-06-01T04:00:01Z
@@ -169,6 +192,7 @@ time:
 	long_name: time_in_seconds_since_volume_start
 	calendar: gregorian
 	comment: Coordinate variable for time. Time at the center of each ray, in fractional seconds since the global variable time_coverage_start
+
 metadata:
 	Conventions: CF/Radial instrument_parameters
 	version: 1.3
